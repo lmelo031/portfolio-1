@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html>
-<!--head-->
 <head>
-  <meta charset="utf-8">
-        <title>Love Cakes Bakery</title>
-<!--font family-->
+  
 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
 
 <style>
-/*stylesheet*/
-h1, h2 {
+h1 {
 font-family: Lobster;
 text-align: center;
-color:#d18f77;
+color:black;
 font-family: Lobster;
 }
 
@@ -21,28 +17,35 @@ text-align: center;
 font-size: 100%;
 }
 
-h3 {
-text-align: center;
-background-color: #f1ddd6;
-border: 1px solid black;
-padding: 1px;
+body {
+Background-color:#e5c2b4;
 }
 
 </style>
 
 </head>
-<!--Body of the document-->
 <body>
-<h1>Contact Us For Your Special Occasion</h1>
-<form action="Contact.php" method="POST">
-            
-  <label>Name</label>
+<h1><img src="icon.png" alt="cake logo" width="100" height="100"></h1>
+<h1>Contact Us For Your Special Occasion!</h1>
+<form action="Contact.php" method="POST">      
+  <label>Name:</label>
   <input type="text" placeholder="name" name="name">
+  <br>
+  <label>Email:</label>
+  <input type="text" placeholder="email" name="email">
+  <br>
+  <label for="appt">Choose a time for your meeting:</label>
+  <input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
 
+  <small>Office hours are 9am to 6pm</small>
+
+
+  
   <br>
   <button type="submit">Submit</button>
 </form>
-
+</body>
 
  <!--link to go back to the main page-->
   <a href="index.html"><p>Back to the home page</p></a>
