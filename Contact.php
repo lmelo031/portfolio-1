@@ -10,7 +10,7 @@
 p {
 font-family:'Times New Roman', Times, serif;
 text-align: center;
-font-size: 135%;
+font-size: 110%;
 }
 
 h1 {
@@ -21,12 +21,37 @@ Text-align: center;
 body {
 Background-color:#e5c2b4;
 }
+.center {
+  margin: auto;
+  width: 30%;
+  border: 3px solid white;
+  padding: 10px;
+  text-align: center;
+  
+}
 </style>
 
 </head>
 <p>Thank you for contacting us!</p>
+<div class="center">
 Hello! <?php echo $_POST["name"];?><br>
-<b>We will sent you an email confirmation to:</b>
- <?php echo $_POST["email"];?>
- <?php echo $_POST["appt"]; ?>
+
+<b>Email confirmation sent to:</b>
+ <?php echo $_POST["email"];?><br>
+
+ <b>Time of meeting:</b>
+ <?php echo $_POST["appt"]; ?><br>
+
+ <b>Meeting Date:</b>
+ <?php echo $_POST["trip-start"]; ?>
+
+<b>Phone Number:</b>
+<?php echo $_POST["phone"]; ?><br>
+
+<b>Comments:</b>
+<?php echo $_POST["comments"]; ?><br>
+</div>
+
+ <a href="index.html"><p>Back to the home page</p></a>
+
  
