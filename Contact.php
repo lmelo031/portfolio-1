@@ -43,7 +43,7 @@ Hello! <?php echo $_POST["name"];?><br>
  <?php echo $_POST["appt"]; ?><br>
 
  <b>Meeting Date:</b>
- <?php echo $_POST["trip-start"]; ?>
+ <?php echo $_POST["trip-start"]; ?><br>
 
 <b>Phone Number:</b>
 <?php echo $_POST["phone"]; ?><br>
